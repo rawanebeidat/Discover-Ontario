@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Exo', serif;
+    
+    font-size: 14px;
+    color: #053b03;
+}
+/********************navbar*********************/
+.navbar{
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 1.5px;
+}
+.nav-item{
+padding: 8px;
+}
+
+.nav-link{
+    color: #087921 !important; 
+}
+
+
+.nav-link.active,
+.nav-link:hover{
+color:#b20808 !important;
+}
+/********************logo*********************/
+.MainLogo{
+    font-family: cursive  !important;
+    color: #087921 !important;
+    font-size: 21px !important;
+}
+.SubLogo{
+    color: #b20808 !important;
+}
+/********************Carousel Img*********************/
+
+.carousel .carousel-indicators li {
+    width: 30px;
+    height: 5px;
+    border-radius: 1%
+}
+
+.carousel-caption{
+    bottom: 200px;
+}
+@media (max-width: 576px) {
+    .carousel-caption{
+        bottom: 20px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+}
