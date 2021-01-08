@@ -27,6 +27,22 @@ padding: 8px;
 .nav-link:hover{
 color:#b20808 !important;
 }
+subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 /********************logo*********************/
 .MainLogo{
     font-family: cursive  !important;
@@ -37,24 +53,105 @@ color:#b20808 !important;
     color: #b20808 !important;
 }
 /********************Carousel Img*********************/
-
 .carousel .carousel-indicators li {
     width: 30px;
     height: 5px;
     border-radius: 1%
 }
 
-.carousel-caption{
-    bottom: 200px;
+/*********************contact******************************/
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
-@media (max-width: 576px) {
-    .carousel-caption{
-        bottom: 20px;
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+#status{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: large;
+    font-family: "Exo", sans-serif;
+}
+#status.success{
+    background-color: #087921;
+    animation: status 2s forwards;
+}
+#status.error{
+    background-color: #b20808;
+    color: #fafafa;
+    animation: status 2s forwards;
+}
+@keyframes status{
+   0% {
+        opacity: 1;
+        pointer-events: all;
     }
-    .carousel-caption h5{
-        font-size: 30px;
+    90% {
+        opacity: 1;
+        pointer-events: all;
     }
-    .carousel-caption p{
-        display: none;
+    100% {
+        opacity: 0;
+        pointer-events: none;
     }
+}
+/*************************footer********************/
+.uppercase {
+    text-transform: uppercase !important;
+}
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    color: #b20808;
+}
+.col p{
+    font-family: "Exo", sans-serif;
+    font-weight:600;
+    font-size: 100 !important;
+    color: #053b03;
+}
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 35px;
+    height: 35px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 10px;
+    text-align: center;
+    color: whitesmoke;
+    background:#b20808 ;
+    
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    margin: 20px;
 }
