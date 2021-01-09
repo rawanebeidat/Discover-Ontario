@@ -225,7 +225,7 @@ button[type="submit"] {
 }
 /*---------------------------- Location Pages ------*/
 .bg-wrapper {
-    background-image: url(../Images/location-cover.jpeg);
+    background-image: url(Images/location-cover.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
