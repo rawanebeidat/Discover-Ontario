@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Discover Ontario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+
+<!--main header-->
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light  p-2" >
+        <div class="container">
+         <a class="navbar-brand" href="Index.html">
+            <div class="MainLogo">
+                <span class="SubLogo" id="home">Discover</span> Ontario
+            </div>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                 <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item px-3 active" >
+                             <a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#famous" id="navbarDropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Famous Places</a>
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                     <a class="dropdown-item" href="#historical">Historical</a>
+                                     <a class="dropdown-item" href="#natural">Natural</a>
+                                     <a class="dropdown-item" href="#modern">Modern</a>
+                                 </div>
+                        </li>
+
+                        <li class="nav-item px-3">
+                             <a class="nav-link" href="#contact">Contact Us</a></li>
+
+                 </ul>
+
+             </div>
+        </div>
+    </nav>
+</header>
+ <!--main content-->
+<main id="maincontent" class="container">
+                <div class="row py-5 text-center">
+                    <div class="col">
+                        <h1>Ottawa Parliament</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 pb-5 order-1 order-lg-2">
+                        <div id="location-map"></div>
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1">
+                        <img src="Images/historic-building-Ottawa-Parliament.jpg" class="card-img-top" alt="Ottawa Parliament">
+                        <div class="location-desc py-5">
+                            <p>Parliament Hill is a limestone outcrop with a gently sloping top that was originally covered in primeval forest of beech and hemlock.For hundreds of years, the hill served as a landmark on the Ottawa River for First Nations and, later, European traders, adventurers, and industrialists, to mark their journey to the interior of the continent. After Ottawa, then called Bytown, was founded, the builders of the Rideau Canal used the hill as a location for a military base (and hospital),naming it Barrack Hill. A large fortress was planned for the site but never built, and by the mid-19th century the hill had lost its strategic importance.</p>
+                            <p>For more information visit the official website: <a href="https://visit.parl.ca/sites/Visit/default/en_CA" target="_blank">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+</main>
+    <script>
+         let thisLocation = {lat: 53.343225, lng: -6.267848, title: 'Dublin Castle'}
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIGV-yMFW2sZbKjho3bgFebj1ZbzZ7AI&callback=initMap"></script>
+    <script src="JS/location-map.js"></script>
+<!--footer-->
+ <footer class="container-fluid">
+       <div class="col text-center">
+                <h5 class="uppercase general-sub">follow us on Social:</h5>
+                <p>We are always ready to serve you!</p>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+ </footer>
+</body>
+</html>
