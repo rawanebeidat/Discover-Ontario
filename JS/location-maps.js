@@ -22,6 +22,5 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: options.center,
         map: map,
-        title: thisLocation.title,
       });
 }/** END INIT */
