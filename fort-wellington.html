@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -14,7 +12,7 @@
     
     
 </head>
-<body>
+<body >
 
 <!--main header-->
 <header>
@@ -31,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                  <ul class="navbar-nav ml-auto ">
                         <li class="nav-item px-3 active" >
-                             <a class="nav-link" href="#home">Home</a></li>
+                             <a class="nav-link" href="Index.html">Home</a></li>
                         <li class="nav-item dropdown">
                              <a class="nav-link dropdown-toggle" href="#famous" id="navbarDropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Famous Places</a>
                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -42,7 +40,7 @@
                         </li>
 
                         <li class="nav-item px-3">
-                             <a class="nav-link" href="#contact">Contact Us</a></li>
+                             <a class="nav-link" href="Index.html#contact">Contact Us</a></li>
 
                  </ul>
 
@@ -54,7 +52,7 @@
 <main id="maincontent" class="container">
                 <div class="row py-5 text-center">
                     <div class="col">
-                        <h1>Ottawa Parliament</h1>
+                        <h1>Fort Wellington</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -62,19 +60,21 @@
                         <div id="location-map"></div>
                     </div>
                     <div class="col-lg-6 order-2 order-lg-1">
-                        <img src="Images/historic-building-Ottawa-Parliament.jpg" class="card-img-top" alt="Ottawa Parliament">
+                        <img src="Images/historic fort william.jpg" class="card-img-top" alt="Fort Wellington">
                         <div class="location-desc py-5">
-                            <p>Parliament Hill is a limestone outcrop with a gently sloping top that was originally covered in primeval forest of beech and hemlock.For hundreds of years, the hill served as a landmark on the Ottawa River for First Nations and, later, European traders, adventurers, and industrialists, to mark their journey to the interior of the continent. After Ottawa, then called Bytown, was founded, the builders of the Rideau Canal used the hill as a location for a military base (and hospital),naming it Barrack Hill. A large fortress was planned for the site but never built, and by the mid-19th century the hill had lost its strategic importance.</p>
-                            <p>For more information visit the official website: <a href="https://visit.parl.ca/sites/Visit/default/en_CA" target="_blank">here</a>.</p>
+                            <p> Fort Wellington National Historic Site is a historic military fortification located on the north shore of the St.
+                                 Lawrence River at Prescott, Ontario. The military fortification was used by the British Army, and the Canadian militia for most of the 19th century,
+                                  and by the militia in the 20th century, until 1923, when the property was handed over to the Dominion Parks Commission, the predecessor to Parks Canada. 
+                                  The fort was earlier named a National Historic Site of Canada on January 1920.
+                                   Built in the midst of the War of 1812, the British commissioned the construction of the fortification in 1813 to protect the head of the Gallop Rapids in the St. 
+                                   Lawrence. Completed in 1814, the fort was abandoned by the British shortly after the war, although it formally remained the property of the British Board of Ordnance. 
+                                   The British commissioned the construction of a new fort, on top of the earthwork of the first fort in 1838, during the onset of the Rebellions of 1837–1838.
+                                    Completed in 1839, the fort was used by the British Army, and the Canadian Militia.</p>
+                            <p>For more information visit the official website <a href="https://www.pc.gc.ca/en/lhn-nhs/on/wellington" target="_blank">click here</a>.</p>
                         </div>
                     </div>
                 </div>
-</main>
-    <script>
-         let thisLocation = {lat: 53.343225, lng: -6.267848, title: 'Dublin Castle'}
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIGV-yMFW2sZbKjho3bgFebj1ZbzZ7AI&callback=initMap"></script>
-    <script src="JS/location-map.js"></script>
+</main>                         
 <!--footer-->
  <footer class="container-fluid">
        <div class="col text-center">
@@ -108,5 +108,10 @@
                 </ul>
         </div>
  </footer>
+    <script>
+        let thisLocation = {lat: 44.71361, lng: -75.50848, title: 'Fort Wellington'}
+    </script>
+    <script src="JS/location-maps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo8bQjOratAf51riZ5vgwR3U08eshnJTM&callback=initMap"></script>
 </body>
 </html>
