@@ -44,22 +44,8 @@ color: #a33b84 !important;
 .nav-link:hover{
 color:#44181e !important;
 }
-subnav {
-  float: left;
-  overflow: hidden;
-}
 
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: #9E9E9E;
-  outline: #b20808;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+
 /********************logo*********************/
 .MainLogo{
     font-family: cursive  !important;
@@ -70,6 +56,11 @@ subnav {
 .SubLogo{
     color: #e0c2df !important;
     font-style: italic;
+}
+/*************************home Img**********************/
+.img-fluid{
+    background-repeat: no-repeat;
+
 }
 
 /************************famous places*********************/
@@ -99,7 +90,7 @@ subnav {
 
 /* ----- Full width sections ----- */
 .bg-light-blue {
-    background: #abb9d4;
+    background: #bfcadf;
 }
 /* ------ BS Cards ------*/
 
@@ -111,12 +102,7 @@ subnav {
     border: 5px solid #421b3d;
     
 }
-.card-img-top{
-    height:12vw;
-}
-#top {
-     height:15vw;
-}
+
 .carousel-indicators {
     bottom: -40px;
 }
@@ -219,7 +205,7 @@ button[type="submit"] {
     font-family: "Exo", sans-serif;
     font-weight:600;
     font-size: 100 !important;
-    color: #cc75af;
+    color: #c53896;
 }
 .social-links {
     padding-bottom: 15px;
