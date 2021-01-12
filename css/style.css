@@ -70,6 +70,178 @@ color:#44181e !important;
     margin-top: 15px;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    transition: all .2s ease-in-out;
+}
+.btn:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgb(160, 63, 182);
+    border-color: #aa62a7;
+}
+
+/* ----- Full width sections ----- */
+.bg-light-blue {
+    background: #bfcadf;
+}
+/* ------ BS Cards ------*/
+
+.card-text p{
+    text-align: justify;
+}
+.card {
+    background:#e6dee5;
+    border: 5px solid #421b3d;
+    
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+.carousel-control-prev {
+    left: -20px;
+}
+.carousel-control-next {
+    right: -20px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 30px;
+    width: 30px;
+}
+.carousel-indicators li {
+    background-color: #9E9E9E;
+    height: 6px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+/************famous places cards*************/
+.card-title-wrapper {
+    position: relative;
+    min-height: 80px;
+}
+.card-title {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*********************contact******************************/
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #6e1044;
+    color: #fafafa;
+}
+#status{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: 500;
+}
+#status.success{
+    background-color: #9e2279;
+    animation: status 2s forwards;
+}
+#status.error{
+    background-color: #85547a;
+    color: #fafafa;
+    animation: status 2s forwards;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Exo', serif;
+    font-size: 14px;
+    color: #051a05;
+}
+
+/*****************headings******************/
+ h1, h2, h3, h4, h5{
+    font-family: 'Exo', sans-serif;
+    color: rgb(77, 4, 37);
+}
+.h1, h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+.h2, h2 {
+    font-size: 2.3rem;
+}
+.h3, h3 {
+    font-size: 2rem;
+}
+.h4, h4 {
+    font-size: 1.6rem;
+}
+/********************navbar*********************/
+.navbar{
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 1.5px;
+}
+.nav-item{
+padding: 8px;
+}
+
+.nav-link{
+color: #a33b84 !important; 
+}
+.nav-link.active,
+.nav-link:hover{
+color:#44181e !important;
+}
+
+
+/********************logo*********************/
+.MainLogo{
+    font-family: cursive  !important;
+    color: #b95b92 !important;
+    font-size: 21px !important;
+    font-style: italic;
+}
+.SubLogo{
+    color: #e0c2df !important;
+    font-style: italic;
+}
+/*************************home Img**********************/
+.img-fluid{
+    background-repeat: no-repeat;
+
+}
+
+/************************famous places*********************/
+.btn {
+    padding: .6rem 1rem;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -125,8 +297,7 @@ color:#44181e !important;
 }
 
 
-/* famous places cards */
-/* vertically align title as some are larger than others*/
+/******************* famous places cards ********************/
 .card-title-wrapper {
     position: relative;
     min-height: 80px;
@@ -192,6 +363,86 @@ button[type="submit"] {
         pointer-events: none;
     }
 }
+/*************************footer********************/
+.uppercase {
+    text-transform: uppercase !important;
+}
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    color: #5f325f;
+}
+.col p{
+    font-family: "Exo", sans-serif;
+    font-weight:600;
+    font-size: 100 !important;
+    color: #c53896;
+}
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 35px;
+    height: 35px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 10px;
+    text-align: center;
+    color: whitesmoke;
+    background:#8a1d2f ;
+    
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e81058;
+}
+
+#footer-details {
+    margin: 20px;
+}
+/*---------------------------- Location Pages ------*/
+.location-desc p{
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.bg-wrapper {
+    background-image: url(../Images/location-page-cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-overlay {
+    background: rgba(0, 0, 0, 0.2);
+}
+.location-page #maincontent {
+    background: #fff;
+    margin: 50px auto;
+}
+.location-page h1 {
+    text-align: left;
+    font-size: 2rem;
+}
+.location-page h1 img{
+    margin-right: 5px;
+}
+
+    /* famous plasec cards */
+    .card-title-wrapper {
+        min-height: 80px;
+    }
+    #location-map {
+        min-height: 560px;
+        border-style: solid;
+        border-color: #3508b2;
+        border-width: thick;
+    }
+
 /*************************footer********************/
 .uppercase {
     text-transform: uppercase !important;
